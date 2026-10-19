@@ -355,6 +355,12 @@ src_libdrivers_la_SOURCES += \
 	src/hardware/dreamsourcelab-dslogic/protocol.c \
 	src/hardware/dreamsourcelab-dslogic/api.c
 endif
+if HW_DREAMSOURCELAB_DSLOGIC_U3PRO32
+src_libdrivers_la_SOURCES += \
+	src/hardware/dreamsourcelab-dslogic-u3pro32/protocol.h \
+	src/hardware/dreamsourcelab-dslogic-u3pro32/protocol.c \
+	src/hardware/dreamsourcelab-dslogic-u3pro32/api.c
+endif
 if HW_FLUKE_45
 src_libdrivers_la_SOURCES += \
 	src/hardware/fluke-45/protocol.h \
